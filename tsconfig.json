@@ -1,0 +1,57 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "useDefineForClassFields": true,
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    "skipLibCheck": true,
+
+    /* Bundler mode */
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx",
+
+    /* Linting */
+    "strict": true,
+    "noImplicitAny": false,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+
+    /* Experimental */
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+
+    "baseUrl": "./src",
+    "paths": {
+      "@app": ["./app"],
+      "@app/*": ["./app/*"],
+
+      "@config": ["./config"],
+      "@config/*": ["./config/*"],
+
+      "@pages": ["./pages"],
+      "@pages/*": ["./pages/*"],
+
+      "@widgets": ["./widgets"],
+      "@widgets/*": ["./widgets/*"],
+
+      "@features": ["./features"],
+      "@features/*": ["./features/*"],
+
+      "@entities": ["./entities"],
+      "@entities/*": ["./entities/*"],
+
+      "@shared": ["./shared"],
+      "@shared/*": ["./shared/*"],
+
+      "@ui": ["./ui"],
+      "@ui/*": ["./ui/*"]
+    }
+  },
+  "include": ["src"],
+  "references": [{ "path": "./tsconfig.node.json" }]
+}
